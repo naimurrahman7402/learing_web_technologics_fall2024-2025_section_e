@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form method="post" action="registration.php">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" value="" />
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" value="" />
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" />
+        <br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" />
+        <br>
+
+        <p>Department:</p>
+        <input type="radio" id="CSE" name="department" value="CSE">
+        <label for="CSE">CSE</label>
+
+        <input type="radio" id="EEE" name="department" value="EEE">
+        <label for="EEE">EEE</label>
+
+        <input type="radio" id="BBA" name="department" value="BBA">
+        <label for="BBA">BBA</label>
+        <br><br>
+
+        <label for="blood_group">Blood Group:</label>
+        <select id="blood_group" name="blood_group">
+            <option value="A+">A +</option>
+            <option value="A-">A -</option>
+            <option value="B+">B +</option>
+            <option value="B-">B -</option>
+            <option value="AB+">AB +</option>
+            <option value="AB-">AB -</option>
+            <option value="O+">O +</option>
+            <option value="O-">O -</option>
+        </select>
+        <br>
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <br>
+        <br>
+
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+</body>
+</html>
