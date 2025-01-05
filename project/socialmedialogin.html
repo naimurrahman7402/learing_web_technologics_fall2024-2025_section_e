@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Login</title>
+</head>
+
+<body>
+    <header>
+        <h1>Login to CrowdfundIt</h1>
+    </header>
+
+    <main>
+        <section id="login-section">
+            <h2>Log In</h2>
+            <p>Choose a social media platform to log in:</p>
+            <ul>
+                <li>
+                    <a href="https://example.com/oauth/google">
+                        <img src="google.png" alt="Google Logo" width="50">
+                        Log in with Google
+                    </a>
+                </li>
+                <li>
+                    <a href="https://example.com/oauth/facebook">
+                        <img src="facebook.jpg" alt="Facebook Logo" width="50">
+                        Log in with Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://example.com/oauth/twitter">
+                        <img src="twitter.png" alt="Twitter Logo" width="50">
+                        Log in with Twitter
+                    </a>
+                </li>
+            </ul>
+
+            <p>Or log in with your email:</p>
+            <form action="login-handler.php" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Log In</button>
+            </form>
+
+            <p>Don't have an account? <a href="register.php">Sign up here</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CrowdfundIt. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
